@@ -1,0 +1,20 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.container {
+  main {
+    padding: 16px;
+  }
+
+  .block {
+    @include flex;
+  }
+
+  .buttons {
+    @include flex;
+    justify-content: space-between;
+  }
+}

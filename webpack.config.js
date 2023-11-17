@@ -6,6 +6,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
+  mode: 'development',
+  
   entry: path.resolve(__dirname, 'src', 'index.tsx'),
 
   output: {
@@ -45,7 +47,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: { localIdentName: '[local]_[hash:base64:12]' },
+              modules: { localIdentName: '[local]_[hash:base64:16]' },
             },
           },
           'sass-loader',

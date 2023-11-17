@@ -1,6 +1,7 @@
 .yarn
 /node_modules
 
+webpack.config.js
 build
 yarn.lock
 .eslintignore
